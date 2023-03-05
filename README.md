@@ -3,17 +3,11 @@ tugas administrasi jaringan
 
 Laporan Workshop Administrasi Jaringan
 Webinar Cloud & IoT Security
- 
-Dr. Ferry Astika Saputra ST,M.Sc
+
 
 Yazid Rizki Eka Darmawan
 3121600060
 2 D4 IT B
-
-
-Program Studi D4 Teknik Informatika
-Politeknik Elektronika Negeri Surabaya
-2021/2022
 
 PENDAHULUAN
 Cloud computing adalah model yang menawarkan layanan komputasi instan tanpa menanggung biaya.  Namun demikian , seperti teknologi lainnya , ia membawa kekurangannya .  Salah satu masalah utama adalah masalah keamanan dan privasi termasuk kebocoran data karena infrastruktur sumber daya komputasi bersama untuk memproses informasi bisnis rahasia seperti kekayaan intelektual, rahasia dagang, dan informasi rahasia pelanggan, yang dapat menyebabkan pelaku yang tidak sah dapat mengaksesnya.
