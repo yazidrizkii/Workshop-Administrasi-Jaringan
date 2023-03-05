@@ -1,7 +1,7 @@
-                                                             Laporan Workshop Administrasi Jaringan
-                                                                  Webinar Cloud & IoT Security
+                                                            Laporan Workshop Administrasi Jaringan
+                                                                 Webinar Cloud & IoT Security
 
-![image](https://user-images.githubusercontent.com/96406146/222957242-f406c58b-46b8-433e-8515-5d17c42857b0.png)
+                            ![image](https://user-images.githubusercontent.com/96406146/222957242-f406c58b-46b8-433e-8515-5d17c42857b0.png)
 
 Yazid Rizki Eka Darmawan
 
