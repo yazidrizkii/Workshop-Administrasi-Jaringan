@@ -4,16 +4,6 @@ Yazid rizki eka darmawan
 
 NRP: 3121600060
 
-Daftar Isi
-Evolusi OS (Ubuntu & Debiann)
-SU & SUDO
-Package Maintenance
-Setting Repo
-Arti versi Repo
-Instalasi Package
-MC
-Net-Tools
-Htop
 Evolusi OS
 Seperti halnya manusia, system operasi (OS) yang kita miliki dan kita gunakan saat ini tentunya tidak langsung muncul dalam bentuk yang sudah sebagus sekarang. Ya, system operasi (OS) juga pernah mengalami masa-masa sebuah evolusi ( tingkat pengembangannya).Mulai dari jaman tanpa OS, awal terciptanya OS, hingga evolusi-evolusi yang perlu dilakukan pengembangan dengan tujuan menambal kekurangan kekurangan yang ada dimiliki ole OS pendahuluannya. Akan ada 4 masa evolusi OS yang akan saya bahas Kali ini yaitu :
 
