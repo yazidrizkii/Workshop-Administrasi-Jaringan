@@ -13,6 +13,7 @@ Static Routing
 Sebelum mengkonfigurasi, pastikan terlebih dahulu untuk mencatat IP Address
 
 langkah pertama adalah jalankan winbox.exe terlebih dahulu menggunakan aplikasi wine. Wine adalah aplikasi yang digunakan untuk menjalankan program yang ada di windows melalui sistem linux. Jalankan perintah wine winbox.exe pada folder yang digunakan untuk menyimpan aplikasi winbox.
+![image](https://user-images.githubusercontent.com/96406146/224462220-5d8c61ee-05ba-4b45-9f05-c6d296b067b3.png)
 Langkah 1
 
 Lalu akan muncul tampilan winbox seperti dibawah ini, sebelum masuk ke konfigurasinya maka harus login terlebih dahulu. Jika belum muncul ip di tabel bawah, maka klik tab neighbors lalu klik refresh. Apabila sudah muncul maka klik IP nya dan klik tombol connect.
