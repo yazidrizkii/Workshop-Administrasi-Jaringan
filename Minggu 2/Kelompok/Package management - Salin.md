@@ -1,88 +1,133 @@
-Tugas Package Management
+KONFIGURASI ROUTER
 
-Yazid rizki eka darmawan
+Kelompok 3 Tugas Routing Routerboard 3011
 
-NRP: 3121600060
+Nama Anggota Kelompok :
 
-Evolusi OS
-Seperti halnya manusia, system operasi (OS) yang kita miliki dan kita gunakan saat ini tentunya tidak langsung muncul dalam bentuk yang sudah sebagus sekarang. Ya, system operasi (OS) juga pernah mengalami masa-masa sebuah evolusi ( tingkat pengembangannya).Mulai dari jaman tanpa OS, awal terciptanya OS, hingga evolusi-evolusi yang perlu dilakukan pengembangan dengan tujuan menambal kekurangan kekurangan yang ada dimiliki ole OS pendahuluannya. Akan ada 4 masa evolusi OS yang akan saya bahas Kali ini yaitu :
+-Hanif Nabila (312600046)
 
-Sistem Operasi Batch (1950-an-1960-an): Sistem operasi pertama yang diciptakan adalah sistem operasi batch. Sistem ini memungkinkan pengguna untuk mengumpulkan pekerjaan mereka dalam satu file, dan sistem operasi akan memproses file tersebut secara otomatis. Namun, sistem ini tidak interaktif dan tidak memiliki antarmuka pengguna.
+-Muhammad Hafid Azis (3121600055)
 
-Sistem Operasi Time-Sharing (1960-an-1970-an): Sistem operasi Time-Sharing memungkinkan beberapa pengguna untuk menggunakan sistem secara bersamaan. Sistem ini juga memperkenalkan antarmuka pengguna interaktif dan beberapa perintah yang lebih mudah digunakan.
+-Yazid Rizki Eka Darmawan (3121600060)
 
-Sistem Operasi Personal Computer (1980-an): Dengan munculnya komputer pribadi, sistem operasi seperti DOS (Disk Operating System) dan MacOS mulai populer. Sistem operasi ini memungkinkan pengguna untuk mengakses komputer secara pribadi dan mudah digunakan.
+#Static Routing
 
-Sistem Operasi Jaringan (1990-an-2000-an): Sistem operasi jaringan, seperti Windows NT dan Unix, memungkinkan pengguna untuk terhubung dengan jaringan komputer dan berbagi sumber daya seperti printer dan file.
+Sebelum mengkonfigurasi, pastikan terlebih dahulu untuk mencatat IP Address
 
-Sistem Operasi Mobile (2000-an-sekarang): Dengan munculnya ponsel pintar dan tablet, sistem operasi mobile seperti iOS dan Android menjadi populer. Sistem operasi ini dirancang untuk mendukung perangkat yang lebih kecil dan mudah digunakan dalam perangkat mobile.
+1.langkah pertama adalah jalankan winbox.exe terlebih dahulu menggunakan aplikasi wine. Wine adalah aplikasi yang digunakan untuk menjalankan program yang ada di windows melalui sistem linux. Jalankan perintah wine winbox.exe pada folder yang digunakan untuk menyimpan aplikasi winbox.
 
-Ubuntu
+![image](https://user-images.githubusercontent.com/96406146/224462220-5d8c61ee-05ba-4b45-9f05-c6d296b067b3.png)
 
-Ubuntu adalah sistem operasi Linux berbasis Debian yang dikembangkan oleh Canonical Ltd., sebuah perusahaan yang didirikan oleh entrepreneur Mark Shuttleworth. Ubuntu awalnya didasarkan pada distribusi Debian Linux, tetapi seiring waktu telah mengembangkan identitasnya sendiri dan memperkenalkan fitur-fitur baru.
-Debian
+2.Lalu akan muncul tampilan winbox seperti dibawah ini, sebelum masuk ke konfigurasinya maka harus login terlebih dahulu. Jika belum muncul ip di tabel bawah, maka klik tab neighbors lalu klik refresh. Apabila sudah muncul maka klik IP nya dan klik tombol connect.
+Keterangan fitur login:
 
-Debian adalah sistem operasi open-source yang populer berbasis pada kernel Linux. Pertama kali dirilis pada tahun 1993, Debian telah menjadi salah satu distribusi Linux yang paling stabil dan aman. Debian dirancang untuk memenuhi kebutuhan berbagai pengguna, dari pengguna rumahan hingga perusahaan besar.
-SU & SUDO
-SU (super user) adalah perintah untuk masuk ke dalam akun root yang memberikan hak akses penuh ke sistem operasi. Namun, penggunaan SU harus hati-hati karena kesalahan dapat menyebabkan kerusakan pada sistem operasi.
+-Connect To = Masukkan IP Router atau MAC Address Router yang kita inginkan
 
-SUDO adalah singkatan dari "superuser do". Perintah ini memungkinkan pengguna biasa untuk menjalankan perintah sebagai superuser atau root dengan memasukkan kata sandi. Dengan menggunakan SUDO, pengguna dapat menjalankan perintah yang memerlukan hak akses penuh tanpa harus keluar dari akun pengguna biasa.
+-Login = Masukkan username dan password login ke router anda (default = admin)
 
-SUDO SU sebenarnya tidak ada. Namun, pengguna dapat menggunakan perintah sudo su untuk masuk ke dalam akun root dengan hak akses penuh. Hal ini dapat berguna dalam situasi di mana pengguna ingin menjalankan beberapa perintah sebagai root tanpa harus keluar dari akun pengguna biasa dan masuk ke dalam akun root dengan perintah su.
+-Password = Masukkan Password untuk router yang ingin anda koneksikan (default tidak diisi)
 
-Package Maintenance
-Setting Repo Untuk mensetting repository pada Linux, ikuti langkah-langkah berikut:
+-Add/Set = Untuk menyimpan informasi beruba IP/MAC Router, Login, Password, ke menu Managed, jadi ketika konek ke router kedepan nya, tidak perlu ketik lagi.
 
-Buka terminal pada sistem Linux Anda.
-Jalankan perintah sudo nano /etc/apt/sources.list untuk membuka file sources.list.
-Cari baris yang berisi informasi repository yang ingin Anda tambahkan atau ubah. Baris tersebut akan terlihat seperti <deb <http://example.com/ubuntu> bionic main>.
-Jika ingin menambahkan repository baru, tambahkan baris baru dengan format <deb <http://example.com/ubuntu> bionic main>. Ganti http://example.com/ubuntu dengan URL repository yang ingin Anda tambahkan, dan ganti bionic dengan nama versi distribusi Linux yang Anda gunakan.
-Jika ingin mengubah repository yang sudah ada, ubah baris yang sudah ada dengan URL repository yang baru.
-Setelah selesai mengedit file sources.list, tekan Ctrl + X, lalu tekan Y untuk menyimpan perubahannya.
-Jalankan perintah sudo apt-get update untuk memperbarui daftar paket dan repository pada sistem Linux Anda.
-Setelah selesai melakukan langkah-langkah di atas, repository yang baru ditambahkan atau diubah akan tersedia pada sistem Linux Anda.
+-Connect = Untuk connect ke router kita.
 
-Arti Versi Repo
-Arti dari versi di repository adalah nomor yang menunjukkan versi paket perangkat lunak yang tersedia di suatu repository pada sistem operasi Linux. Versi ini digunakan untuk membedakan antara versi lama dan versi baru dari paket perangkat lunak, dan untuk memastikan bahwa pengguna memiliki versi yang paling baru dan stabil dari perangkat lunak yang diinstal pada sistem mereka. Nomor versi biasanya terdiri dari tiga angka yang dipisahkan oleh titik, misalnya 1.2.3, di mana angka pertama menunjukkan nomor utama versi, angka kedua menunjukkan nomor rilis, dan angka ketiga menunjukkan nomor revisi atau perbaikan kecil. Semakin tinggi nomor versi, semakin baru perangkat lunak tersebut.
+-Managed = Hasil list IP/MAC Router, Login, Password yang tersimpan
 
-Pada repository Linux, terdapat empat komponen utama yaitu:
+-Neighbors = Akan muncul list router yang terhubung langsung dengan router kita.
 
-Main: Komponen utama yang menyediakan paket perangkat lunak bebas dan terbuka sepenuhnya yang didukung secara resmi oleh distribusi Linux.
-Universe: Komponen yang menyediakan paket perangkat lunak bebas dan terbuka sepenuhnya, tetapi tidak didukung secara resmi oleh distribusi Linux.
-Restricted: Komponen yang menyediakan paket perangkat lunak yang tidak sepenuhnya bebas karena lisensi yang dibatasi, seperti driver perangkat keras tertentu.
-Multiverse: Komponen yang menyediakan paket perangkat lunak yang tidak sepenuhnya bebas dan terbuka karena alasan non-lisensi, seperti plug-in media yang tidak didukung secara resmi.
-Paket perangkat lunak pada komponen Multiverse dapat digunakan dengan lisensi tertentu atau memiliki batasan penggunaan tertentu. Beberapa paket perangkat lunak pada komponen Multiverse misalnya seperti plug-in untuk media player dan codec untuk memutar file multimedia tertentu.
-Instalasi Package
-MC (Midnight Commander) atau disingkat MC adalah aplikasi manajer berkas yang berjalan di lingkungan teks pada sistem operasi Linux. MC menyediakan antarmuka pengguna teks yang mudah digunakan untuk menjelajahi berkas dan direktori pada sistem operasi.
+![image](https://user-images.githubusercontent.com/96406146/224462637-f70b5e3f-e6c2-409f-98d2-bfa50d18efb1.png)
 
-MC memiliki fitur-fitur seperti pengelolaan berkas dan direktori, pengeditan teks, pengarsipan dan ekstraksi berkas, dan masih banyak lagi. MC sangat cocok bagi pengguna yang terbiasa dengan antarmuka pengguna teks dan ingin melakukan tugas-tugas administratif pada sistem operasi Linux.
 
-Berikut adalah contoh instalasi Midnight Commander (mc) di Ubuntu:
+Apabila sudah login maka tampilannya akan seperti gambar berikut.
 
-Buka terminal dan jalankan perintah sudo apt-get update untuk memperbarui daftar paket.
-Jalankan perintah sudo apt-get install mc untuk menginstal Midnight Commander.
-Tunggu hingga proses instalasi selesai.
-Setelah instalasi selesai, jalankan perintah mc untuk memulai Midnight Commander.
-Setelah Midnight Commander terbuka, Anda dapat menggunakan antarmuka teksnya untuk menjelajahi dan mengelola berkas dan direktori pada sistem Anda. 
+![image](https://user-images.githubusercontent.com/96406146/224462648-afd72c84-32c9-4c00-b457-a0ec18456f38.png)
 
-Net-Tools adalah seperangkat utilitas jaringan pada sistem operasi Linux yang digunakan untuk memeriksa dan mengkonfigurasi koneksi jaringan pada sistem. Beberapa utilitas yang termasuk dalam paket net-tools adalah ifconfig (untuk mengkonfigurasi antarmuka jaringan), route (untuk mengkonfigurasi routing jaringan), dan netstat (untuk memeriksa koneksi jaringan). Namun, pada distribusi Linux yang lebih baru, net-tools telah digantikan oleh utilitas jaringan yang lebih modern seperti iproute2.
+Beberapa keterangan yang terdapat di “tittle bar” winbox tersebut adalah sebagai berikut:
 
-Untuk menginstal net-tools pada Linux, Anda dapat mengikuti langkah-langkah berikut:
+-admin = user yang digunakan saat login
 
-Buka terminal pada sistem operasi Linux Anda.
-Jalankan perintah sudo apt-get update untuk memperbarui daftar paket pada sistem.
-Jalankan perintah sudo apt-get install net-tools untuk menginstal net-tools pada sistem.
-Tunggu hingga proses instalasi selesai.
-Setelah instalasi selesai, Anda dapat menggunakan utilitas net-tools seperti ifconfig, route, dan netstat untuk memeriksa dan mengkonfigurasi koneksi jaringan pada sistem Anda.
-Setelah menginstal net-tools, Anda dapat memeriksa dan mengkonfigurasi koneksi jaringan pada sistem Anda menggunakan utilitas net-tools seperti yang dijelaskan di atas.
+-@mac-address/ip-address = login yg digunakan apakah ip address atau mac address
+-(MikroTIk) = nama router anda atau identitas router anda
 
-Htop adalah alat pemantauan proses untuk Linux yang memungkinkan pengguna untuk melihat dan mengelola proses yang sedang berjalan di sistem mereka. Ini memberikan tampilan waktu nyata dari penggunaan CPU, penggunaan memori, dan statistik sistem lainnya dalam format yang mudah dibaca. HTOP memungkinkan pengguna untuk mengurutkan proses berdasarkan berbagai parameter, seperti penggunaan CPU atau penggunaan memori, dan menyediakan opsi untuk menjeda atau menghentikan proses sesuai kebutuhan. Ini adalah alat yang berguna untuk administrator sistem dan pengguna tingkat lanjut yang perlu memantau dan mengelola kinerja sistem Linux mereka.
+-Winbox (64)bit = menggunakan winbox versi 64bit
 
-Untuk menginstal HTOP pada Linux Ubuntu, ikuti langkah-langkah berikut:
+-v6.39.3 = RouterOS yg digunakan pada mikrotik router anda
 
-Buka terminal pada sistem operasi Linux Ubuntu Anda.
-Jalankan perintah sudo apt-get update untuk memperbarui daftar paket pada sistem Anda.
-Jalankan perintah sudo apt-get install htop untuk menginstal HTOP pada sistem Anda.
-Tunggu hingga proses instalasi selesai.
-Setelah instalasi selesai, Anda dapat menjalankan perintah htop pada terminal untuk melihat dan mengelola proses yang sedang berjalan pada sistem Anda.
-Setelah menginstal HTOP, Anda dapat menggunakan alat ini untuk memonitor dan mengelola kinerja sistem Linux Anda.
+-RB3011UiAS = tipe produk routerboard yang digunakan
+
+-arm = arsitektur processor yang digunakan pada mikrotik anda.
+
+Langkah selanjutnya yaitu konfigurasi routing pada router agar semua pc bisa saling terhubung. Caranya masuk ke IP > Routes
+
+![image](https://user-images.githubusercontent.com/96406146/224462710-8d87b78a-82fa-45b4-8aff-01835ed41376.png)
+
+
+Didalam tab routes tersebut terdapat list route yang sudah ditambahkan, untuk menambahkan route baru klik tanda +. Maka tampilannya akan seperti gambar berikut.
+
+![image](https://user-images.githubusercontent.com/96406146/224462724-87026b23-72fa-4ee9-b667-70a1f2203c89.png)
+
+
+-Dst. Address > Masukkan IP network yang ingin dituju
+
+-Gateway > Masukkan IP router yang digunakan untuk masuk ke network yang dituju
+
+Masukkan semua IP networknya agar bisa terhubung ke semua pc yang ada di network tersebut.
+
+4.Lakukan test ping ke network lain untuk mengecek bahwa konfigurasi static routing sudah berhasil.
+
+![image](https://user-images.githubusercontent.com/96406146/224462766-0a7f5907-54aa-48fc-b7b7-72366e80ca66.png)
+
+Installasi Virtualbox pada linux
+
+1.Download Virtualbox installer di website resminya https://www.virtualbox.org/wiki/Linux_Downloads. Pastikan untuk mendownload untuk versi Debian sesuai dengan OS yang dipakai.
+
+![image](https://user-images.githubusercontent.com/96406146/224462781-57c021e6-1af8-4f73-91ac-e5f81457cba7.png)
+
+2.Buka Terminal, kemudian pindah ke directory tempat menyimpan file hasil download tadi menggunakan perintah cd Downloads. Kemudian jalankan install menggunakan aplikasi dpkg dengan menggunakan perintah dibawah ini dan tunggu hingga proses installasi selesai.
+
+note : dpkg adalah perangkat lunak di dasar sistem manajemen paket dalam sistem operasi gratis Debian dan banyak turunannya. dpkg digunakan untuk menginstal, menghapus, dan memberikan informasi tentang paket .deb.
+
+sudo dpkg -i virtualbox-7.0_7.0.6-155176Debianbullseye~amd64.deb
+
+note : virtualbox-7.0_7.0.6-155176~Debianbullseyeamd64.deb adalah nama file debian yang sudah didownload tadi.
+
+![image](https://user-images.githubusercontent.com/96406146/224463057-0f3cc31a-59c6-4f57-a900-08ff71a5bd1e.png)
+
+
+Setelah proses installasi selesai, buka aplikasi virtualbox dengan menggunakan perintah berikut
+virtualbox
+
+![image](https://user-images.githubusercontent.com/96406146/224463073-16fa6944-0a2b-44a9-a8ca-2e48c592136c.png)
+
+
+lalu akan muncul window “Oracle VM Virtualbox Manager”.
+
+![image](https://user-images.githubusercontent.com/96406146/224463083-c5bace17-1b41-4563-88c7-549a257cc918.png)
+
+
+Installasi Virtual Machine pada virtualbox
+
+1.Ketika sudah menginstall virtualbox, setting virtual machine untuk menginstall ubuntu yang sudah disiapkan. Beri nama virtual machine dan OS yang akan diinstall
+
+![image](https://user-images.githubusercontent.com/96406146/224463094-1ff6852e-2aaa-4d8d-87e2-610509190390.png)
+
+2.Create username dan password
+
+![image](https://user-images.githubusercontent.com/96406146/224463113-0b14b857-d10c-4efd-ac88-99c4be26ce1f.png)
+
+3.Tentukan jumlah memori dan yang digunakan untuk virtual OS
+
+![image](https://user-images.githubusercontent.com/96406146/224463118-8be699da-79c3-42de-986c-7dee7fd1bfa4.png)
+
+4.Tentukan jumlah storage dan yang digunakan untuk virtual OS
+
+![image](https://user-images.githubusercontent.com/96406146/224463128-1cc4f874-0f69-4af4-9b2e-75c5b76ff89b.png)
+
+Berikut adalah summary dari setting yang sudah disetting tadi
+
+![image](https://user-images.githubusercontent.com/96406146/224463172-fb1d7f2f-1454-46b1-84b2-e5f335f2894f.png)
+
+Setelah install virtualbox dan setting virtual machine, install OS ubuntu pada virtual machine yang sudah dibuat. Berikut tampilan awal OS Ubuntu setelah diinstall.
+
+![image](https://user-images.githubusercontent.com/96406146/224463184-98d4c5c3-c524-4f00-8cf0-118a524f9560.png)
+
