@@ -7,6 +7,8 @@ Hanif Nabila (3121600046)
 
 Muhammad Hafid Azis (3121600055)
 
+Yazid Rizki Eka Darmawan (3121600060)
+
 ## Static Routing
 
 Sebelum mengkonfigurasi, pastikan terlebih dahulu untuk mencatat
